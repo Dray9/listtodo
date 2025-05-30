@@ -36,7 +36,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="w-full max-w-xl space-y-6">
         <div className="flex flex-col items-center space-y-4">
-          <h1 className="text-3xl font-bold text-center">List Todo</h1>
+          <h1 className="text-3xl font-bold text-center">List To-do</h1>
           <div className="progress-container">
             <div className="progress-text">
               <h2>Task Done</h2>
