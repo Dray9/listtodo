@@ -1,0 +1,205 @@
+/* App.css - Todo List Styles */
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%);
+  padding: 2rem 1rem;
+}
+
+.todo-wrapper {
+  max-width: 28rem;
+  margin: 0 auto;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(90deg, #3b82f6 0%, #4f46e5 100%);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header p {
+  color: #dbeafe;
+  margin: 0.5rem 0 0 0;
+}
+
+/* Add Todo Form Styles */
+.add-todo-section {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.add-todo-form {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.todo-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.add-button {
+  background: #3b82f6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-button:hover {
+  background: #2563eb;
+}
+
+.add-icon {
+  font-size: 1.125rem;
+}
+
+/* Empty State */
+.empty-state {
+  padding: 2rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.empty-state .emoji {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Todo List Styles */
+.todo-list {
+  max-height: 24rem;
+  overflow-y: auto;
+}
+
+.todo-item {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+.todo-item:hover {
+  background-color: #f9fafb;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Checkbox Styles */
+.todo-checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.todo-checkbox:hover {
+  border-color: #4ade80;
+}
+
+.todo-checkbox.completed {
+  background: #10b981;
+  border-color: #10b981;
+  color: white;
+}
+
+/* Todo Text */
+.todo-text {
+  flex: 1;
+  transition: all 0.2s;
+  color: #1f2937;
+}
+
+.todo-text.completed {
+  color: #6b7280;
+  text-decoration: line-through;
+}
+
+/* Delete Button */
+.delete-button {
+  background: none;
+  border: none;
+  color: #ef4444;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  flex-shrink: 0;
+  font-size: 1.125rem;
+}
+
+.delete-button:hover {
+  color: #dc2626;
+}
+
+/* Footer Stats */
+.footer-stats {
+  padding: 1rem;
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .app-container {
+    padding: 1rem 0.5rem;
+  }
+  
+  .todo-wrapper {
+    margin: 0 0.5rem;
+  }
+  
+  .add-todo-section {
+    padding: 1rem;
+  }
+  
+  .header {
+    padding: 1rem;
+  }
+}
